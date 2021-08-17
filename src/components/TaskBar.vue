@@ -9,6 +9,9 @@
         :index="index"
         @todo-delete="removeTodo(index)"
       />
+      <p v-if="todos.length === 0" class="text-lg text-center mt-2 font-medium">
+        No tasks yet! Add one.
+      </p>
     </div>
   </div>
 </template>
